@@ -1,4 +1,4 @@
-# pass.in
+# Pass.in
 
   O Pass.in é uma aplicação **de gestão de participantes em eventos presenciais**
 
