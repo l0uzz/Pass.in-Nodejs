@@ -1,4 +1,10 @@
-# pass.in
+# NLW UNITE SUMMER
+
+<p align="center">
+  <img alt="projeto Pass.in" src=".github/preview.png" width="100%">
+</p>
+
+# Pass.in
 
   O Pass.in é uma aplicação **de gestão de participantes em eventos presenciais**
 
