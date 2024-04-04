@@ -1,46 +1,25 @@
 import fastify from "fastify";
-import { z } from "zod";
+import { serializerCompiler, validatorCompiler, ZodTypeProvider } from "fastify-type-provider-zod";
 import { PrismaClient } from "@prisma/client";
+import { createEvent } from "./routes/create-event";
+import { registerForEvent } from "./routes/register-for-event";
+import { getEvent } from "./routes/get-event";
+import { getAttendeBadge } from "./routes/get-attendee-badge";
+
 
 const app = fastify();
 
-const prima = new PrismaClient({
+app.setValidatorCompiler(validatorCompiler);
+app.setSerializerCompiler(serializerCompiler);
+
+const prisma = new PrismaClient({
   log: ['query'],
 });
 
-// API REST
-
-app.get('/', () => {
-  
-})
-
-app.post('/events', async (request , reply) => {
-  const createEventSchema = z.object({
-    title: z.string().min(4),
-    details: z.string().nullable() ,
-    maximumAttendees: z.number().int().positive().nullable(),
-  })
-  const data = createEventSchema.parse(request.body)
-
- const event = await prima.event.create({
-    data: { 
-      title: data.title,
-      details: data.details,
-      maximumAttendees: data.maximumAttendees, 
-      slug: new Date().toISOString(), 
-    },
-  })
-
-  return reply.status(201).send({eventId: event.id})
-})
-
-app.put('/', () => {
-  
-})
-
-app.delete('/', () => {
-  
-})
+app.register(createEvent)
+app.register(registerForEvent)
+app.register(getEvent)
+app.register(getAttendeBadge)
 
 app.listen({port: 3333}).then(() => {
   console.log("HTTP SERVER RUNNING!")

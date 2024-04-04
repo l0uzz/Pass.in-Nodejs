@@ -1,8 +1,26 @@
-POST http://localhost:3333/events HTTP/1.1
+POST http://localhost:3333/events
 Content-Type: application/json 
  
 {
-  "title": "Unite Summit",
-  "details": "Um evento para apaixonados pela programaçao",
-  "maximumAttendees": 100
+  "title": "Novo evento",
+  "details": "Um evento para apaixonados pela programaçaoo",
+  "maximumAttendees": 1
 }
+
+### 
+
+POST http://localhost:3333/events/0b7f109d-7c85-4e52-a297-cc42806c400c/attendees 
+Content-Type: application/json
+
+{
+  "name": "Luiz Caua",
+  "email": "l0uzzdev2@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/0b7f109d-7c85-4e52-a297-cc42806c400c
+
+###
+
+GET  http://localhost:3333/attendees/1/badge
