@@ -18,13 +18,13 @@
 
   ### Requisitos Funcionais 
 
-  - [ ] O organizador deve poder cadastrar um novo evento;
+  - [ X ] O organizador deve poder cadastrar um novo evento;
 
-  - [ ] O organizador deve poder visualizar dados de um evento;
+  - [ x ] O organizador deve poder visualizar dados de um evento;
 
-  - [ ] O organizador deve poder visualizar a lista de participantes;
+  - [ X ] O organizador deve poder visualizar a lista de participantes;
 
-  - [ ] O participante deve poder se inscrever em um evento;
+  - [ X ] O participante deve poder se inscrever em um evento;
 
   - [ ] O organizador deve poder visualizar seu crachá da inscrição
 
@@ -32,11 +32,11 @@
 
   ### Regras de Negócio 
 
-  - [ ] O participante só pode se inscrever em um evento uma unica vez;
+  - [ X ] O participante só pode se inscrever em um evento uma unica vez;
 
-  - [ ] O participante só pode se inscrever em eventos com vagas disponiveis;
+  - [ X ] O participante só pode se inscrever em eventos com vagas disponiveis;
 
-  - [ ] O participante só pode realizar check-in em um evento uma única vez;
+  - [ X ] O participante só pode realizar check-in em um evento uma única vez;
 
   ### Requisitos não-funcionais 
 
