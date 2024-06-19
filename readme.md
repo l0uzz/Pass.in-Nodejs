@@ -30,9 +30,9 @@
 
   - [ X ] O participante deve poder se inscrever em um evento;
 
-  - [ ] O organizador deve poder visualizar seu crachá da inscrição
+  - [ X ] O organizador deve poder visualizar seu crachá da inscrição
 
-  - [ ] O participante deve poder realizar check-in no evento;
+  - [ X ] O participante deve poder realizar check-in no evento;
 
   ### Regras de Negócio 
 
