@@ -6,6 +6,10 @@
 
 # Pass.in
 
+<p align="center">
+  <img alt="Front-end Pass.in" src=".github/preview2.png" width="100%">
+</p>
+
   O Pass.in é uma aplicação **de gestão de participantes em eventos presenciais**
 
   A ferramenta permite que o organizador cadastre um evento e abra uma página pública de inscrição.
