@@ -7,7 +7,7 @@
 # Pass.in
 
 <p align="center">
-  <img alt="Front-end Pass.in" src=".github/preview.png" width="100%">
+  <img alt="Front-end Pass.in" src=".github/previeww2.png" width="100%">
 </p>
 
   O Pass.in é uma aplicação **de gestão de participantes em eventos presenciais**
